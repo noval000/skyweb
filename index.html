@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="digital" content="разработка сайтов, диджитал агентство в г. Кемерово, разработка сайтов в г. Кемерово, диджитал агентство">
+	<title>Skyweb - разработка и продвижение сайтов</title>
+	<link rel="icon" href="/favicon02.ico" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/4773f4b6b9.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  	<script src="js/jquery.rotating-slider.min.js"></script>
+  	<script src="js/gsap_3.7.0.min.js"></script>
+  	<script src="js/script.js"></script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	   m[i].l=1*new Date();
+	   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+	   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	   ym(91831918, "init", {
+	        clickmap:true,
+	        trackLinks:true,
+	        accurateTrackBounce:true,
+	        webvisor:true
+	   });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/91831918" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+
+<form action="send.php" method="POST" class="wow animate__animated animate__fadeInUp"  data-wow-delay="0.8s">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header justify-content-center">
+          <div class="name-modal"><h5 class="modal-title" id="exampleModalLabel">Связаться с нами</h5></div>
+        </div>
+        <button type="button" class="btn-close btn-form" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        <div class="modal-body border-form">
+          <div class="justify-content-center ">
+            <div class="number-form d-flex justify-content-center align-items-center mb-4">
+                <a style="color: #000;" class="" href="tel:+79069333633">Позвонить</a>
+            </div>
+              <div class="form-icon-flex">
+                <a target="_blank" href="https://vk.com/skyweb42"><i style="color: #000;" class="fa fa-vk fa-nav list-services-icon pb-0" aria-hidden="true"></i></a>
+                <a target="_blank" href=""><i style="color: #000;" class="fa fa-instagram fa-nav list-services-icon ms-3 pb-0" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://tele.click/{@noval00}"><i style="color: #000;" class="fa fa-telegram fa-nav list-services-icon ms-3 pb-0" aria-hidden="true"></i></a>
+              </div>
+          </div> 
+        </div>
+        <div class="modal-body">
+			<div class="row mb-3 center_block">
+				<div class="col-sm-10">
+					<div class="form-floating mb-3">
+						<input style="color: #000;" type="name" name="name" class="form-control" id="floatingInput" placeholder="Ваше имя" required>
+						<label style="color: #000;" for="floatingInput" class="">Ваше имя</label>
+					</div>
+				</div>
+			</div>
+          	<div class="form-floating">
+				<div class="row mb-3 center_block">
+					<div class="col-sm-10">
+						<div class="form-floating mb-3 justify-content-center">
+							<input style="color: #000;" type="email" name="email" class="form-control" id="floatingInput" placeholder="Ваш Email" required>
+							<label style="color: #000;" for="floatingInput" class="">Ваш Email</label>
+						</div>
+						<div class="form-floating">
+							<textarea  class="form-control" type="message" name="message" placeholder="Сообщение" id="floatingTextarea" required style="height: 100px; color: #000;"></textarea>
+							<label style="color: #000;" for="floatingTextarea" class="">Сообщение</label>
+						</div>
+					</div>
+				</div>
+          	</div>
+        </div>
+        <div class="modal-footer justify-content-center">
+			<div class="input-mail" style="color: #000;">
+	  			<input style="color: #000;" type="submit" value="Отправить" class="btn btn-lg text-center btn-outline-secondary01 btn-outline-secondary02">
+	  		</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+		<nav class="navbar navbar-expand-xl navbar-light bg-transparent fixed-top" style="transition: 1s all ease;">
+		  <div class="container">
+		    <a class="navbar-brand" href="#"><img src="img/logo-new.png" alt=""></a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarBasic">
+		      <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+		        <li class="nav-item ind-js-897">
+		          <a class="nav-link js-scroll-trigger" href="#1">Главная</a>
+		        </li>
+		        <li class="nav-item ind-js-897">
+		          <a class="nav-link js-scroll-trigger" href="#2">О нас</a>
+		        </li>
+		        <li class="nav-item ind-js-897">
+		          <a class="nav-link js-scroll-trigger" href="#our-works">Наши работы</a>
+		        </li>
+		        <li class="nav-item ind-js-897">
+		          <a class="nav-link js-scroll-trigger" href="#offer" tabindex="-1" aria-disabled="true">Что мы предлагаем</a>
+		        </li>
+		        <li class="nav-item ind-js-897">
+		          <a class="nav-link js-scroll-trigger" href="#4" tabindex="-1" aria-disabled="true">Наши преимущества</a>
+		        </li>
+		      </ul>
+		      <button type="button" class="btn btn-primary btn-focus" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			    <a class="my-3 mx-3 js-scroll-trigger nav-a-individ" href="#!">Оставить заявку</a>
+			    <svg class="text-align nav-a-individ" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  				<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+				</svg>
+			</button>
+
+
+				<ul class="navbar-icon-ind mt-4" style="display: none!important;">
+					<li class="subtitle-footer">
+						<a class="" href="tel:+79069333633”">
+						<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="subtitle-footer">
+						<a class="" target="_blank" href="mailto:digital42@list.ru">
+						<i class="fa fa-envelope fa-2x ps-3" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="subtitle-footer">
+						<a class="" href="#">
+							<i class="fa fa-map-marker fa-2x ps-3" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="subtitle-footer">
+						<a target="_blank" class="" href="https://api.whatsapp.com/send/?phone=79069333633">
+							<i class="fa fa-instagram fa-2x ps-3" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="subtitle-footer">
+						<a target="_blank" class="" href="https://vk.com/skyweb42">
+						<i class="fa fa-vk fa-2x ps-3" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="subtitle-footer">
+						<a target="_blank" class="" href="https://tele.click/{@noval00}">
+						<i class="fa fa-telegram fa-2x ps-3" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+		    </div>
+		  </div>
+		</nav>
+<!--  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	  <div class="container">
+	    <a class="navbar-brand" href="#">Skyweb</a>
+	    <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+			<ul class="navbar-nav">
+				<li><a class="a" href="#1">Главная</a>
+				<li><a class="a" href="#2">О компании</a>
+				<li><a class="a" href="#offer">Что мы предлагаем</a>
+				<li><a class="a" href="#4">Наши преимущества</a>
+			</ul>
+	    </div>
+	  </div>
+	</nav> -->
+
+	<div class="container">
+		<!-- <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden >
+		<nav class="nav" id="nav">
+				<label for="nav-toggle" class="nav-toggle" onclick="open_menu()"></label>
+			    <h2 class="logo"> 
+			        <a href="#">Skyweb</a> 
+			    </h2>
+			    <ul>
+			        <li><a class="a" href="#1" onclick="close_menu()">Главная</a></li>
+			        <li><a class="a" href="#2" onclick="close_menu()">О компании</a></li>
+			        <li><a class="a" href="#offer" onclick="close_menu()">Что мы предлагаем</a></li>
+			        <li><a class="a" href="#4" onclick="close_menu()">Наши преимущества</a></li>
+			    </ul>
+			<button type="button" class="btn btn-primary btn-focus mt-5">
+			    <a class="text-white my-3 mx-3" href="#application">Оставить заявку</a>
+			    <svg class="text-align" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+	  				<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+				</svg>
+			</button>
+				<ul class="navbar-icon-ind mt-5">
+					<li class="subtitle-footer">
+						<a class="" href="tel:+79069333633”">
+						<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="subtitle-footer">
+						<a class="" target="_blank" href="mailto:digital42@list.ru">
+						<i class="fa fa-envelope fa-2x ps-3" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="subtitle-footer">
+						<a class="" href="#">
+							<i class="fa fa-map-marker fa-2x ps-3" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="subtitle-footer">
+						<a target="_blank" class="" href="https://api.whatsapp.com/send/?phone=79069333633">
+							<i class="fa fa-instagram fa-2x ps-3" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="subtitle-footer">
+						<a target="_blank" class="" href="https://vk.com/novel00">
+						<i class="fa fa-vk fa-2x ps-3" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="subtitle-footer">
+						<a target="_blank" class="" href="https://tele.click/{@noval00}">
+						<i class="fa fa-telegram fa-2x ps-3" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+		</nav> -->
+	</div>
+	<main>
+		<div class="bg-image pt-767px" id="1">
+			<div class="container">
+				<div class="row wow animate__animated animate__fadeInUp sign-wrap-4" style="visibility: hidden;" data-wow-delay="0.5s">
+					<div class="col text-center text-block-one sign_word">DIGITAL <span class="text-block-one01">SKY</span>WEB</div>
+				</div>
+				<div class="row wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.5s">
+					<div class="col text-white text-center subtitle-block-one">Повседневная практика.</div>
+				</div>
+				<div class="row text-center wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.5s">
+					<div class="col">
+						<button type="button" class="btn btn-main-sky text-center mt-5">
+							<a class="my-3 mx-3 outline-a" href="#offer">Что мы предлагаем</a>
+							<svg style="color: #000;" class="text-align" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+						  		<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid bg-color d-flex-100vh" id="2">
+			<div class="container">
+				<div class="row center-767-adv pb-5 pt-5" >
+					<div class="col-md center-block pl-ind-0 mb-5">
+						<div class="wow animate__animated animate__fadeInUp center-767-adv pb-5" style="visibility: hidden;" data-wow-delay="0.5s">
+							<div class="about-company"><span class="text-uppercase" style="color: red; font-style: italic;"></span>
+							</div>
+						</div>
+
+							<nav class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
+							  <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><ya-tr-span data-index="731-0" data-translated="false" data-source-lang="en" data-target-lang="ru" data-value="Home" data-translation="Главная" data-ch="1" data-type="trSpan">Разработка сайтов</ya-tr-span></a>
+							  <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><ya-tr-span data-index="732-0" data-translated="false" data-source-lang="en" data-target-lang="ru" data-value="Profile" data-translation="Профиль" data-ch="1" data-type="trSpan">Прочие услуги</ya-tr-span></a>
+							</nav>
+							<div class="tab-content" id="pills-tabContent">
+							  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+							  	<ya-tr-span data-index="734-0" data-translated="false" data-source-lang="ru" data-target-lang="ru" data-ch="1" data-type="trSpan">
+<!-- 									<div class="card-group">
+										<div class="card card01" style="width: 18rem;">
+										  <img src="img/card1-about.png" class="card-img-top img-card01" alt="Sunset Over the Sea" />
+										  <div class="card-body">
+										    <p class="card-text">Мы диджитал агентство, занимаемся полным циклом продвижения компаний в интернете.</p>
+										  </div>
+										</div>
+										<div class="card card01 ms-3 ms-ind-card-560" style="width: 18rem;">
+										  <img src="img/card2-about.jpg" class="card-img-top img-card01" alt="Sunset Over the Sea"/>
+										  <div class="card-body">
+										    <p class="card-text">Разработка сайтов – Сделаем уникальный дизайн согласно вашему фирменному стилю. Напишем чистый код, без использования конструкторов.</p>
+										  </div>
+										</div>	
+										<div class="card card01 ms-3 ms-ind-card-560" style="width: 18rem;">
+										  <img src="img/card3-about.jpg" class="card-img-top img-card01" alt="Sunset Over the Sea"/>
+										  <div class="card-body">
+										    <p class="card-text">Продвижение – поможем вам быстро добиться желаемого результата, обеспечим постоянный приток новых заявок.</p>
+										  </div>
+										</div>
+									</div> -->
+									<section class="card-container">
+									    <div class="card">
+									        <div class="face face-1">
+									            <img src="https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+									            <h3>Немного О нас</h3>
+									        </div>
+									        <div class="face face-2">
+									            <p>Мы диджитал агентство, занимаемся полным циклом продвижения компаний в интернете.</p>
+									        </div>
+									    </div>
+									    <div class="card">
+									        <div class="face face-1">
+									            <img src="https://images.unsplash.com/photo-1558544956-15f3c317e06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+									            <h3>Разработка сайтов</h3>
+									        </div>
+									        <div class="face face-2">
+									            <p>Сделаем уникальный дизайн согласно вашему фирменному стилю. Напишем чистый код, без использования конструкторов.</p>
+									        </div>
+									    </div>        
+									    <div class="card">
+									        <div class="face face-1">
+									            <img src="https://images.unsplash.com/photo-1628912595201-ad4720b4ce30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=981&q=80" alt="" />
+									            <h3>Продвижение</h3>
+									        </div>
+									        <div class="face face-2">
+									            <p>Поможем вам быстро добиться желаемого результата, обеспечим постоянный приток новых заявок.</p>
+									        </div>
+									    </div>     
+									</section>
+							  	</ya-tr-span>
+							  </div>
+							  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+								  	<ya-tr-span data-index="734-0" data-translated="false" data-source-lang="ru" data-target-lang="ru" data-ch="1" data-type="trSpan">
+<!-- 									<div class="card-group">
+										<div class="card card01" style="width: 18rem;">
+										  <img src="img/card02-1.png" class="card-img-top" alt="Sunset Over the Sea"/>
+										  <div class="card-body">
+										    <p class="card-text">Разработаем фирменный стиль для вашей компании.</p>
+										  </div>
+										</div>
+										<div class="card card01 ms-3 ms-ind-card-560" style="width: 18rem;">
+										  <img src="img/card02-2.png" class="card-img-top" alt="Sunset Over the Sea"/>
+										  <div class="card-body">
+										    <p class="card-text">Сделаем дизайн визиток и прочей необходимой продукции.</p>
+										  </div>
+										</div>	
+										<div class="card card01 ms-3 ms-ind-card-560" style="width: 18rem;">
+										  <img src="img/card02-3.png" class="card-img-top" alt="Sunset Over the Sea"/>
+										  <div class="card-body">
+										    <p class="card-text">Если вам нужен только дизайн вашего будущего сайта, мы поможем вам с этим.</p>
+										  </div>
+										</div>
+									</div> -->
+									<section class="card-container">
+									    <div class="card">
+									        <div class="face face-1">
+									            <img src="https://images.unsplash.com/photo-1617777938240-9a1d8e51a47d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80" alt="" />
+									            <h3>Фирменный стиль</h3>
+									        </div>
+									        <div class="face face-2">
+									            <p>Разработаем фирменный стиль для вашей компании.</p>
+									        </div>
+									    </div>
+									    <div class="card">
+									        <div class="face face-1">
+									            <img src="https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="" />
+									            <h3>Grafical design</h3>
+									        </div>
+									        <div class="face face-2">
+									            <p>Сделаем дизайн визиток и прочей необходимой продукции.</p>
+									        </div>
+									    </div>        
+									    <div class="card">
+									        <div class="face face-1">
+									            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1036&q=80" alt="" />
+									            <h3>Web design</h3>
+									        </div>
+									        <div class="face face-2">
+									            <p>Если вам нужен только дизайн вашего будущего сайта, мы поможем вам с этим.</p>
+									        </div>
+									    </div>     
+									</section>
+								  	</ya-tr-span>
+							  </div>
+							</div>
+							<button class="btn-our-works mt-5 d-flex justify-content-center">
+								<span class="block-btn-our-w px-2 py-2">
+									<a href="#our-works" class="our-works">Наши работы</a>
+									<i class="fa fa-angle-double-down ms-2" aria-hidden="true"></i>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="droplet-wrap" style=
+		"background: url(https://images.unsplash.com/photo-1592919933511-ea9d487c85e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;">
+		    <div class="droplet"></div>
+		    <div class="droplet"></div>
+		    <div class="droplet"></div>
+		    <div class="droplet"></div>
+		    <div class="droplet"></div>
+		    <div class="droplet"></div>
+		    <div class="droplet"></div>
+		</div>
+		<div class="block-our-works border-top-our-works mt-5" id="our-works">
+			<div class="container">
+				<div class="row mb-5 pt-5 wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.5s">
+					<div class="col text-center text-uppercase text_block_2 pt5vh mt-5">НАШИ <span style="color: red; font-style: italic;">РАБОТЫ</span></div>
+				</div>
+			</div>
+			<div class="slider mobile-slider-none">
+			    <div class="nav">
+			        <div class="prev">
+			            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>            
+			        </div>    
+			        <div class="next">
+			            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>                
+			        </div>
+			    </div>
+			    <div class="item is-active" style=
+			    "background-image: url(https://images.unsplash.com/photo-1583918003351-41c1bbe74a3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    			background-position: center center;
+    			background-repeat: no-repeat;}">
+			        <div class="content">
+			            <div class="item-title">Detail Trail</div>
+			            <div class="item-text">Корпоративный сайт для детейлинг центра в г. Кемерово.</div>
+			        </div>
+			        <div class="imgs">
+			            <div class="grid">
+			                <div class="img img-1">
+			                    <img src="img/our-works/detail-trail/detail01.jpg"/>
+			                </div>
+			                <div class="img img-2">
+			                    <img src="img/our-works/detail-trail/detail02.jpg"/>
+			                </div>
+			                <div class="img img-3">
+			                    <img src="img/our-works/detail-trail/detail03.png"/>
+			                </div>
+			                <div class="img img-4">
+			                    <img src="img/our-works/detail-trail/detail04.png"/>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			    
+			    <!-- Еще слайды -->
+			    
+			    <div class="item" style=
+			    "background-image: url(https://images.unsplash.com/photo-1519219788971-8d9797e0928e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1144&q=80);
+			    background-position: center center;
+    			background-repeat: no-repeat;}">
+			        <div class="content">
+			            <div class="item-title">SC_Loft</div>
+			            <div class="item-text">Компания, занимается производством мебели и декора в стиле лофт в г. Кемерово.</div>
+			        </div>
+			        <div class="imgs">
+			            <div class="grid">
+			                <div class="img img-1">
+			                    <img src="https://sun9-15.userapi.com/impg/HWNUNwSs6OwitEccUv7V4_drDShKNeC66htbZA/ikJnnGErtb0.jpg?size=1920x1184&quality=95&sign=0ae0e0e4c69044672fdc219df4b60e41&type=album"/>
+			                    
+			                </div>
+			                <div class="img img-2">
+			                    <img src="https://sun9-10.userapi.com/impg/xDwy2_-UN8eJ15OeBMMbLDAExX14G3d3KV7W7g/tMldkd4Moso.jpg?size=1920x1440&quality=95&sign=caca9d24fd25e4100e8a4eac6f4251f4&type=album"/>
+			                </div>
+			                <div class="img img-3">
+			                    <img src="https://sun9-80.userapi.com/impg/9GdKq2MxA1Q2GWt-miVjFNyaqt22kYzbFbmZIA/PlZWk0V_EYs.jpg?size=1920x1440&quality=95&sign=e928b133eaf49e993cd979a920c5690e&type=album"/>
+			                </div>
+			                <div class="img img-4">
+			                    <img src="https://sun9-52.userapi.com/impg/-1w8F4uEg0EEPK76Km3kvbxfHVItpH3P4Afwvw/HMeEVnPYmL4.jpg?size=1878x1920&quality=95&sign=6de1f7d563ebc03d09cc842997637f1a&type=album"/>
+			                </div>
+			            </div>
+			        </div>
+			    </div>    
+			</div>
+			<div class="container mobile-slider-visible">
+
+				<div id="gal">
+				    <div id="bg"></div>
+				    <div id="fg"></div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-block-about_us pt-5 pb-5" id="offer">
+			<div class="container">
+				<div class="row mb-5 mt-5 wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.5s">
+					<div class="col text-center text-uppercase text-white text_block_2 pt5vh">Что мы предлагаем</div>
+				</div>
+				<div class="row text-center border-b flex-end">
+					<div class="col-md pt-5 pb-5 border-r pt-ind-0 wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award1.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">Высокий уровень исполнения</div>
+					</div>
+					<div class="col-md pt-5 pb-5 border-r wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award2.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">Гарантируем качество работы</div>
+					</div>
+					<div class="col-md pt-5 pb-5 border-r wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award3.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">Выполним работу быстро</div>
+					</div>
+					<div class="col-md pt-5 pb-5 border-r wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award4.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">Обеспечим поток заявок</div>
+					</div>
+					<div class="col-md pt-5 pb-5 wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award5.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">Автоматизируем работу</div>
+					</div>
+				</div>
+				<div class="row text-center border-b">
+					<div class="col-md pt-5 pb-5 border-r wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award6.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">Разработаем уникальный дизайн</div>
+					</div>
+					<div class="col-md pt-5 pb-5 border-r wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award7.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">Напишем чистый код </div>
+					</div>
+					<div class="col-md pt-5 pb-5 border-r wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award8.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">Контекстная реклама</div>
+					</div>
+					<div class="col-md pt-5 pb-5 border-r wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award9.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">Третированная реклама </div>
+					</div>
+					<div class="col-md pt-5 pb-5 wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award10.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">SEO продвижение</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md border-r wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s"></div>
+					<div class="col-md pt-5 pb-5 wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award11.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">Продвижение в социальных сетях</div>
+					</div>
+					<div class="col-md center_block border-l border-r wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<button type="button" class="btn btn-about-all" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							<a class="my-3 mx-3 fs-12px individ-about-all-a" href="#application">Подробнее</a>
+							<svg class="text-align individ-about-all-a" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+						  		<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+							</svg>
+						</button>
+					</div>
+					<div class="col-md pt-5 pb-5 d-none-767 wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+						<img src="img/award2.png" alt="" class="img-fluid text-center pb-3">
+						<div class="text-row fs-12px">Высокий уровень исполнения </div>
+					</div>
+					<div class="col-md border-l wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s"></div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-block-advantages" id="4">
+			<div class="container pb-5 pt-5">
+				<div class="row mb-5 pt-5 wow animate__animated animate__fadeInUp" style="visibility: hidden;" data-wow-delay="0.1s">
+					<div class="col-md-12 text-center text_block_2 pt5vh text-uppercase">Наши <span style="color: red;">преимущества</span></div>
+				</div>
+				<div class="row mobile-slider-none-2">
+					<div class="rotating-slider-container">
+					    <div class="rotating-slider">
+					        <ul class="slides">
+					            <li style="background-image: url(img/slides/slide01.jpg);">
+					                <div class="slide-inner">
+					                    <p>Сделаем адаптивный дизайн,<br> под любой вид устройств.</p>
+					                </div>
+					            </li>        
+					            <li style="background-image: url(img/slides/slide02.jpg);">
+					                <div class="slide-inner">
+					                    <p>Установим на сайт<br> счетчики аналитики.</p>
+					                </div>        
+					            </li>
+					            <li style="background-image: url(img/slides/slide03.jpg);">
+					                <div class="slide-inner">
+					                    <p>Настроим все возможные<br> способы обратной связи.</p>
+					                </div>        
+					            </li>
+					            <li style="background-image: url(img/slides/slide04.jpg);">
+					                <div class="slide-inner">
+					                    <p>Проведем анализ<br> вашей сферы и конкурентов.</p>
+					                </div>    
+					            </li>                  
+					        </ul>
+					    </div>
+					</div>
+				</div>	
+				<div class="row mobile-slider-visible-2">
+					<div class="container">
+						<div class="iconblock-6">
+						    <div class="top">
+						        <div class="pic">
+						            <img src="img/slides/slide01.jpg" />
+						        </div>
+						        <div class="icon">
+						            <i class="fa fa-bell"></i>
+						        </div>
+						    </div>
+						    <div class="body">
+						        <h3>1</h3>
+						        <p>Сделаем адаптивный дизайн,<br> под любой вид устройств.</p>
+						    </div>
+						</div>
+						<div class="iconblock-6">
+						    <div class="top">
+						        <div class="pic">
+						            <img src="img/slides/slide02.jpg" />
+						        </div>
+						        <div class="icon">
+						            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+						        </div>
+						    </div>
+						    <div class="body">
+						        <h3>2</h3>
+						        <p>Установим на сайт<br> счетчики аналитики.</p>
+						    </div>
+						</div>
+						<div class="iconblock-6">
+						    <div class="top">
+						        <div class="pic">
+						            <img src="img/slides/slide03.jpg" />
+						        </div>
+						        <div class="icon">
+						            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+						        </div>
+						    </div>
+						    <div class="body">
+						        <h3>3</h3>
+						        <p>Настроим все возможные<br> способы обратной связи.</p>
+						    </div>
+						</div>
+						<div class="iconblock-6">
+						    <div class="top">
+						        <div class="pic">
+						            <img src="img/slides/slide04.jpg" />
+						        </div>
+						        <div class="icon">
+						            <i class="fa fa-users" aria-hidden="true"></i>
+						        </div>
+						    </div>
+						    <div class="body">
+						        <h3>4</h3>
+						        <p>Проведем анализ<br> вашей сферы и конкурентов.</p>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</main>
+	
+	<footer>
+		<div class="bg-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 align-items-center justify-content-center d-flex none-767px-f">
+						<img src="img/logo-new.png" alt="" class="img-fluid">
+					</div>
+					<ul class="col-md-4 style-none text-center">
+						<li class="text-name-footer pb-5 pt-5 text-center">Контакты</li>
+						<li class="subtitle-footer justify-content-center">
+							<i class="fa fa-phone fa-2x pe-2" aria-hidden="true"></i>
+							<a class="ps-4" href="tel:+79069333633”">+7 906 933 36 33</a>
+						</li>
+						<li class="subtitle-footer justify-content-center">
+							<i class="fa fa-envelope fa-2x pe-2 mt-4" aria-hidden="true"></i>
+							<a class="mt-4 ps-4" target="_blank" href="mailto:digital42@list.ru">digital42@list.ru</a>
+						</li>
+						<li class="subtitle-footer justify-content-center">
+							<i class="fa fa-map-marker fa-2x pe-2 mt-4" aria-hidden="true"></i>
+							<a class="ps-8 mt-4" href="#">г. Кемерово</a>
+						</li>
+					</ul>
+					<ul class="col-md-4 style-none text-center">
+						<li class="text-name-footer pb-5 pt-5">Соц. сети</li>
+						<li class="subtitle-footer end-t reverse justify-content-center">
+							<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+							<a target="_blank" class="ps-4" href="https://api.whatsapp.com/send/?phone=79069333633">WhatsApp</a>
+						</li>
+						<li class="subtitle-footer end-t reverse justify-content-center">
+							<i class="fa fa-vk fa-2x mt-4" aria-hidden="true"></i>
+							<a target="_blank" class="ps-4 mt-4" href="https://vk.com/skyweb42">Vkontakte</a>
+						</li>
+						<li class="subtitle-footer pb-5 end-t reverse justify-content-center">
+							<i class="fa fa-telegram fa-2x mt-4" aria-hidden="true"></i>
+							<a target="_blank" class="ps-4 mt-4" href="https://tele.click/{@noval00}">Telegram</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>	
+	<div class="section-skyweb pt-2 pb-2">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md">
+              <div class="copyright">Copyright 2022</div>
+              <div class="created">Created by <a href="https://vk.com/skyweb42">skyweb</a></div>
+            </div>
+          </div>
+        </div>
+    </div> 
+
+	<script type="text/javascript">
+		$('.js-scroll-trigger').click(function() {
+			$('.navbar-collapse').collapse('hide');
+		})
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>
+	    new WOW().init();
+	</script>
+	<script defer="defer">
+		/*   gallery   */
+
+
+
+
+
+		var imgs = [
+		    'https://sun9-10.userapi.com/impg/xDwy2_-UN8eJ15OeBMMbLDAExX14G3d3KV7W7g/tMldkd4Moso.jpg?size=1920x1440&quality=95&sign=caca9d24fd25e4100e8a4eac6f4251f4&type=album',
+		    'https://sun9-52.userapi.com/impg/-1w8F4uEg0EEPK76Km3kvbxfHVItpH3P4Afwvw/HMeEVnPYmL4.jpg?size=1878x1920&quality=95&sign=6de1f7d563ebc03d09cc842997637f1a&type=album',
+		    'https://sun9-80.userapi.com/impg/9GdKq2MxA1Q2GWt-miVjFNyaqt22kYzbFbmZIA/PlZWk0V_EYs.jpg?size=1920x1440&quality=95&sign=e928b133eaf49e993cd979a920c5690e&type=album',
+		    'https://sun9-11.userapi.com/impg/QLS3zVvMa08IK3qMndj2vy1-LjhDyPMkv9uc1g/EIyS8ssHd1g.jpg?size=1806x1052&quality=95&sign=07b83e31a7f1e3dd2c4a77fecafc3f27&type=album',
+		    'https://sun9-69.userapi.com/impg/gM1MbmoQ_qGVie6B8Nd-oXrGNNAlnJZ2GQ1ZVA/pJxPtM4aRkI.jpg?size=1920x1613&quality=95&sign=d0811eba1d7a5ad3c3297858985a0faa&type=album',
+		    'https://sun9-18.userapi.com/impg/5ZdGL5s6Wdh_sI0Ha-JoLM3ZwOtrWxkezq4AsQ/Nwe-4DPm0mk.jpg?size=1920x1275&quality=95&sign=d5dd54e9970abecdf7fe99a477708552&type=album',
+		    'https://sun9-71.userapi.com/impg/KOnr5O3oK4NMHzYLzkfQHXo3CNnCcHlzpz53qg/32vUoz8oFB8.jpg?size=1440x1800&quality=95&sign=59d2bd34634317b0ea20f2d46ccdfdaf&type=album',
+		],
+		n = imgs.length,
+		current = n-1,
+		closedWidth = Math.floor(gal.offsetWidth/10)
+		for (var i=0; i<n; i++){
+		    var bgImg = document.createElement('div');
+		    bg.appendChild(bgImg);
+		    gsap.set(bgImg, {
+		        attr:{id:'bgImg'+i, class:'bgImg'},
+		        width:'100%',
+		        height:'100%',
+		        backgroundImage:'url('+imgs[i]+')',
+		        backgroundSize:'cover',
+		        backgroundPosition:'center'
+		    })
+		    var b = document.createElement('div');
+		    fg.appendChild(b);
+		    gsap.fromTo(b, {
+		        attr:{id:'b'+i, class:'box'},
+		        innerHTML:'<p>'+(i+1)+'</p>',
+		        width:'100%',
+		        height:'100%',
+		        borderLeft:(i>0)?'solid 1px #eee':'',
+		        backgroundColor:'rgba(250,250,250,0)',
+		        left:i*closedWidth,
+		        transformOrigin:'100% 100%',
+		        x:'100%'
+		        },{
+		        duration:i*0.15,
+		        x:0,
+		        ease:'expo.inOut'
+		    })  
+		    b.onmouseenter = b.onclick = (e)=>{    
+		        if (Number(e.currentTarget.id.substr(1))==current) return; 
+		        var staggerOrder = !!(current < Number(e.currentTarget.id.substr(1)));
+		        current = Number(e.currentTarget.id.substr(1));
+		        gsap.to('.box', {
+		            duration:0.5,
+		            ease:'elastic.out(0.3)',
+		            left:(i)=>(i<=current)? i*closedWidth: gal.offsetWidth-((n-i)*closedWidth),
+		            x:0,
+		            stagger: staggerOrder? 0.05:-0.05
+		        }) 
+		        bg.appendChild( document.getElementById('bgImg'+current) )
+		        gsap.fromTo('#bgImg'+current, {opacity:0}, {opacity:1, duration:0.3, ease:'power1.inOut'})
+		        gsap.fromTo('#bgImg'+current, {scale:1.05, rotation:0.05}, {scale:1, rotation:0, duration:1.5, ease:'sine'}) 
+		    }
+		}
+		window.onresize = (e)=>{
+		    closedWidth = Math.floor(gal.offsetWidth/10)
+		    gsap.set('.box', { x:0, left:(i)=> (i<=current)? i*closedWidth: gal.offsetWidth-((n-i)*closedWidth) })
+		} 
+	</script>
+
+</html>
